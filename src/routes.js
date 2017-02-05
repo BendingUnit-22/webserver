@@ -19,7 +19,7 @@ const Routes = (props) =>(
         <Router {...props}>
             <Route path="/" components={AppContainer}/>
             <Route path="/visualization" components={Vis}/>
-            <Route path="/*" components={NotFound}/>
+            <Route path="/*" co mponents={NotFound}/>
         </Router>
     </Provider>
 );
