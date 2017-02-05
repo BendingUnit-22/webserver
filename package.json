@@ -1,0 +1,45 @@
+{
+  "name": "webserver",
+  "version": "0.1.1",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "express": "^4.14.1",
+    "morgan": "^1.7.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.7.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "npm run build && node server.js",
+    "start:prod": "pushstate-server build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BendingUnit-22/webserver.git"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "redux",
+    "express"
+  ],
+  "author": "Rixing Wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BendingUnit-22/webserver/issues"
+  },
+  "homepage": "https://github.com/BendingUnit-22/webserver#readme"
+}
