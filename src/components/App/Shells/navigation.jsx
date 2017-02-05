@@ -9,7 +9,7 @@ export default class Navigation extends React.Component{
     render(){
         const linkitems = this.props.linkitems.map(
             (link) =>{
-                return <li key={link.key}>{link.name.toUpperCase()}</li>
+                return <li key={link.key}><strong>{link.name.toUpperCase()}</strong></li>
             }
         );
 
