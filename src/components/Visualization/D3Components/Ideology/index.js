@@ -100,7 +100,6 @@ export default class Ideology extends Component{
                     <p>How race, religion, income, education, and age affects one's political ideology?</p>
                     <hr/>
                 </div>
-
                 <div className="row">
                     <RD3Component data={this.state.d3}/>
                 </div>

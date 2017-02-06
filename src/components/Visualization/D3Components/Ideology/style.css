@@ -16,12 +16,11 @@ svg{
 
 text {
     font-size: larger;
-    color: darkslateblue;
-    border: dashed 1px;
 
 }
 
 
 .node {
+    padding: 2em 1em;
     border: dashed 1px;
 }
