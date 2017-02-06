@@ -6,12 +6,13 @@ circle {
 
 h1{
     padding: 10px;
-    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
     color: rebeccapurple;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
 }
 
 svg{
-    padding: 2em 1em;
+    padding: 2em 2em;
 }
 
 text {
@@ -19,8 +20,30 @@ text {
 
 }
 
+.title {
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+
+}
 
 .node {
     padding: 2em 1em;
     border: dashed 1px;
+}
+
+
+.subcat{
+    fill: grey;
+    text-anchor: end;
+}
+
+.row svg{
+    border-top: dashed 1px;
+}
+
+#subtitle{
+    font-size: 18px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #694873;
+
+
 }

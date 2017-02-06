@@ -61,6 +61,7 @@ export default class Ideology extends Component{
                 }
 
                 const categories = Object.entries(info);
+                const colors = ["#DD1C1A", "#086788" , "#3D315B", "#5BC0BE", "#FCB414"];
 
                 this.setState({
                     d3: createNode({
@@ -68,7 +69,8 @@ export default class Ideology extends Component{
                         width: 1200,
                         height: 1000,
                         x: 0,
-                        y:0
+                        y:0,
+                        colors
                     })
                 })
 
@@ -93,15 +95,14 @@ export default class Ideology extends Component{
     render(){
 
         return (
-            <div className="container-fluid">
+            <div className="container">
 
                 <div className="row">
                     <h1>Political Ideology </h1>
-                    <p>How race, religion, income, education, and age affects one's political ideology?</p>
-                    <hr/>
+                    <p id="subtitle">How race, religion, income, education, and age affects one's political ideology?</p>
                 </div>
                 <div className="row">
-                    <RD3Component data={this.state.d3}/>
+                    <RD3Component data={this.state.d3} />
                 </div>
               </div>
 

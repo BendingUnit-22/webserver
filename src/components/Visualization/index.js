@@ -12,6 +12,7 @@ import './style.css';
                  <div className="container-fluid">
                         <Ideology/>
                 </div>
+
          )
     }
 }

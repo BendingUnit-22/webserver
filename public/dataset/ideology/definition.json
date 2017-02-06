@@ -27,8 +27,8 @@
   "INCOME":{
          "-9": "Refused",
          "-8": "Don't know",
-         "-7": "Deleted due to partial (Post-election) interview",
-         "-6": "Not asked unit nonresponse (no Post-election interview)",
+         "-7": "Deleted due to partial interview",
+         "-6": "Not asked unit nonresponse",
          "-4": "Error",
          "-3": "Restricted access",
          "-1": "Inapplicable",
@@ -72,7 +72,7 @@
           "-1": "Inapplicable",
           "1": "Less than high school credential",
           "2": "High school credential",
-          "3": "Some post-high-school, no bachelor's degree",
+          "3": "Some post-high-school, no B.A",
           "4": "Bachelor's degree",
           "5": "Graduate degree"
         },
