@@ -2,21 +2,18 @@
 
 
 import React, {Component} from 'react';
-
-
+import Ideology from './D3Components/Ideology';
 import './style.css';
 
-export default class Visualization extends Component{
+ class Visualization extends Component{
 
     render(){
          return (
-            <div className="Visualization">
-                <div className="container">
-                    <div></div>
-
+                 <div className="container-fluid">
+                        <Ideology/>
                 </div>
-            </div>
-        )
+         )
     }
-
 }
+
+export default Visualization
