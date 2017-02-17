@@ -1,0 +1,164 @@
+
+
+body .container{
+    font-size: 20px;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    line-height: 1.4;
+}
+
+p{
+    margin: 0 0 10px;
+    padding: 1rem 1rem;
+    text-align: justify;
+}
+
+* {
+    border-radius: 0 !important;
+}
+
+
+#cover{
+    background-color: #3498DB;
+    color: white;
+    padding-top: 6rem;
+}
+
+#cover h1{
+    font-size: 7.0rem;
+    line-height: 1.2;
+    letter-spacing: -.1rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+#cover h2{
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+}
+#menu ul{
+    list-style-type: none;
+    padding-left: 0px;
+
+}
+
+#menu li{
+    display: inline;
+    padding: 1rem 2rem;
+    font-size:1.2em;
+}
+
+.navbar_item a{
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+}
+.navbar_item > a:hover{
+    color: #FFF;
+}
+
+
+
+.navbar_item{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+.navbar_item > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar_item > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#portfolio{
+    width: 100vw;
+    height: 100vh;
+    background-color: #334055;
+    padding: 2% 0;
+ }
+#portfolio .container{
+    color: white !important;
+}
+.item {
+
+    float:left;
+    width: 50%;
+    padding-bottom: 2.5vh;
+}
+.item_content{
+    width: 90%;
+    height: 30vh;
+    background-color: #3498DB;
+    margin: 5%;
+}
+.item_content h4{
+    width:90%;
+}
+.heading{
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+
+#resume{
+     padding: 2rem 2rem;
+    display: inline-block;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+#resume a{
+    border-radius: 0.5rem !important;
+    border-width: 2px;
+    border-color: #3498DB;
+    color: #3498DB;
+    padding: 1.5rem 2rem;
+    transition: all 0.5s ease 0s;
+
+}
+
+
+#resume a:hover{
+    background-color:  #3498DB;
+    color: white;
+}
+
+#resume a i {
+    padding: 0 0.5rem;
+}
+
+.zmdi{
+    font-size:8rem;
+}
+
+#introduction{
+    padding: 1rem;
+}
+
+#contact{
+    padding: 5% 10%;
+}
+
+.social a:hover{
+    text-decoration: none;
+}
+
+
+.social-tag{
+    color:  #3498DB;
+    margin-top: 5%;
+}
+
+

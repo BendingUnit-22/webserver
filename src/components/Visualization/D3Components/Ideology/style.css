@@ -1,0 +1,55 @@
+
+
+.heading{
+    margin-top: 5%;
+}
+
+circle {
+    fill: green;
+}
+
+h1{
+    padding: 10px;
+}
+
+#subtitle{
+    font-size: 18px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+text {
+    font-size: larger;
+}
+
+.title {
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+    font-size: 20px;
+}
+
+.node {
+    padding: 2em 3em;
+}
+
+
+.subcat{
+    text-anchor: end;
+    fill: grey;
+}
+
+svg{
+    padding: 2em 5em;
+}
+
+.cat{
+    border-top: dashed 1px;
+}
+
+
+.icon{
+    padding: 2em 1em;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+
+}
+
