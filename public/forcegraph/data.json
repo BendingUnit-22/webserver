@@ -3,7 +3,7 @@
    "type": "root",
    "children": [
       {
-         "name": "House Committee",
+         "name": "House of Representatives",
          "type": "chamber",
          "children": [
             {
@@ -6198,7 +6198,7 @@
          ]
       },
       {
-         "name": "Joint Committee",
+         "name": "Joint Committees",
          "type": "chamber",
          "children": [
             {
@@ -6747,7 +6747,7 @@
          ]
       },
       {
-         "name": "Senate Committee",
+         "name": "U.S Senate",
          "type": "chamber",
          "children": [
             {
