@@ -22,7 +22,7 @@ export default class Portfolio extends React.Component{
                             </div>
 
                             <div className="item">
-                                <h4>P  ---  oop </h4>
+                                <h4> </h4>
                                 <div className="item_content">
                                 </div>
                             </div>

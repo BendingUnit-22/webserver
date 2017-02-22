@@ -16,7 +16,7 @@ export default class Introduction extends React.Component{
                     <h1 className="heading">introduction</h1>
                     <p> My name is Rixing Wu, I'm 21 years old and currently studying my third
                         towards my bache degree in Computer Science at the Wentworth
-                        Institute of Technology (KTH) in Boston Massachasch. What do I do? I code.
+                        Institute of Technology in Boston Massachasch. What do I do? I code.
                         I started my programming journey many years ago with a TI-82 calculator,
                         and since that day I knew my true calling.
                     </p>
