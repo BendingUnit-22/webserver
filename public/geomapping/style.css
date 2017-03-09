@@ -1,3 +1,32 @@
 body {
   background: #fcfcfa;
 }
+
+.clickable{
+    fill: rgba(130,20,150,1);
+    stroke: white;
+}
+
+.clickable:hover{
+    fill: #778891
+}
+
+.clicked{
+    fill: darkred;
+}
+
+.clicked:hover{
+    fill: red;
+}
+
+.wrapper{
+  background-color: black;
+}
+
+.graticule {
+  fill: none;
+  stroke: #f9d60c;
+  stroke-opacity: .5;
+  stroke-width: .5px;
+  pointer-events: none;
+}
