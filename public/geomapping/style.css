@@ -1,10 +1,9 @@
-body {
-  background: orange;
-}
+html, body { margin:0; padding:0; overflow:hidden }
+
 
 .clickable{
     fill: black;
-    stroke: white;
+    stroke: rgba(86, 97, 92, 0.31);
 }
 
 .clickable:hover{
@@ -19,13 +18,14 @@ body {
     fill: orange;
 }
 
-svg{
-  background-color: aqua;
+#globe svg{
+    width:100%;
+     height:100vh;
 }
 
 .graticule {
   fill: none;
-  stroke: white;
+  stroke: rgba(86, 97, 92, 0.31);
   stroke-opacity: 1;
   stroke-width: 1px;
   pointer-events: none;
@@ -51,7 +51,8 @@ input::-webkit-search-cancel-button {
 
 form{
     position: absolute;
-    width: 60%;
+    width: 100%;
+    background-color: rgba(86, 97, 92, 0.31)
   }
 
 input[type=search] {
@@ -112,3 +113,19 @@ input::-webkit-input-placeholder {
 
 }
 
+#menu{
+
+    height: 100vh;
+    background-color: orange;
+    font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+}
+
+.stat{
+    padding: 10px 20px;
+}
+
+
+.flag{
+    min-width: 100px;
+    min-height: 100px;
+}

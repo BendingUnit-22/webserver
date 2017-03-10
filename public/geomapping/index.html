@@ -14,12 +14,49 @@
   </head>
   <body>
 
-  <form class="text-center" autocomplete='off'>
-       <input type="search" placeholder="Search" id="searchInput" class="row" onfocusout="toggleCells()"/>
-      <br>
-      <!-- This is a Table containing cells-->
 
-  </form>
+
+  <div class="container-fluid">
+
+      <div class="row">
+
+        <!-- Globe on the left-->
+        <div class="col-md-9">
+            <form class="text-center" autocomplete='off'>
+              <input type="search" placeholder="Search" id="searchInput" class="row" onfocusout="toggleCells()"/>
+              <br>
+            </form>
+
+          <div id="globe"></div>
+        </div>
+        <!-- Menu on the right-->
+           <div id="menu" class="col-md-3">
+
+            <g>
+                <div class="row">
+                    <div class="row"><h1 class="text-center" id="countryname">United States of America</h1>
+                    </div>
+
+                    <div class="row text-center">
+                        <span class="flag-icon flag-icon-us flag" id="countryicon"></span>
+                        <h4 class="text-center" id="countrycode">USA</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6"> <h4 class="text-center" id="countrylong">longitude: 12312313.2 </h4></div>
+                        <div class="col-md-6" > <h4 class="text-center" id="countrylat">latitude: 324.232.</h4></div>
+                    </div>
+
+                </div>
+            </g>
+
+           </div>
+
+      </div>
+
+
+  </div>
+
 
 
 
