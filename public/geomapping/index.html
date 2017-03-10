@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>World Geomapping</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/css/flag-icon.css">
       <script src="https://d3js.org/d3.v4.min.js"></script>
       <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
       <script src="https://d3js.org/topojson.v2.min.js"></script>
@@ -12,6 +13,15 @@
       <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+  <form class="text-center" autocomplete='off'>
+       <input type="search" placeholder="Search" id="searchInput" class="row" onfocusout="toggleCells()"/>
+      <br>
+      <!-- This is a Table containing cells-->
+
+  </form>
+
+
 
     <script src="index.js"></script>
   </body>

@@ -1,32 +1,114 @@
 body {
-  background: #fcfcfa;
+  background: orange;
 }
 
 .clickable{
-    fill: rgba(130,20,150,1);
+    fill: black;
     stroke: white;
 }
 
 .clickable:hover{
-    fill: #778891
+    fill: grey
 }
 
 .clicked{
-    fill: darkred;
+    fill: darkOrange;
 }
 
 .clicked:hover{
-    fill: red;
+    fill: orange;
 }
 
-.wrapper{
-  background-color: black;
+svg{
+  background-color: aqua;
 }
 
 .graticule {
   fill: none;
-  stroke: #f9d60c;
-  stroke-opacity: .5;
-  stroke-width: .5px;
+  stroke: white;
+  stroke-opacity: 1;
+  stroke-width: 1px;
   pointer-events: none;
 }
+
+/* Search */
+
+
+input {
+    outline: none;
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+
+form{
+    position: absolute;
+    width: 60%;
+  }
+
+input[type=search] {
+     margin: 10px 20px;
+    background: #ededed url(http://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+    border: solid 1px #ccc;
+    padding: 9px 10px 9px 32px;
+    width: 200px;
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+input[type=search]:focus {
+    width: 400px;
+    background-color: #fff;
+    border-color: #66CC75;
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+
+input:-moz-placeholder {
+    color: #999;
+}
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+
+#rowcontainer{
+    margin: auto;
+    width: 420px;
+}
+
+#rowcontainer tr:first-child{
+    background-color: darkorange;
+}
+
+.rowcell{
+    text-align: left;
+    width:400px;
+    background-color: white;
+     border: solid 1px #ccc;
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+    padding:10px;
+}
+
+.rowcell *{
+    margin: 5px 10px;
+
+}
+
