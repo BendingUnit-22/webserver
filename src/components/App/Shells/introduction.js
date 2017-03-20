@@ -8,7 +8,6 @@ export default class Introduction extends React.Component{
 
     render(){
 
-
         return (
             <div className="container">
                 <div className="row text-center" id="introduction">
