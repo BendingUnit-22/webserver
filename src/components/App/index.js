@@ -8,35 +8,49 @@ import {Grid, Row} from 'react-bootstrap';
 import reactCSS from 'reactcss'
 import "./reset.css"
 
+import coverimage from '../../../public/images/cover.jpg';
+
 class App extends Component{
 
-    render(){
 
+    render(){
 	    const styles = reactCSS({
 		    'default': {
 			    top_row:{
-				    width: "100vw",
+                     height: "100px",
+                    backgroundColor: "red"
 			    },
 			    full_row: {
-                    width: "100vw",
-                    height: "100vh",
-                    backgroundColor: "gray"
-                },
+                     backgroundColor: "#334055"
+			    },
 
                 bottom_row: {
-	                width: "100vw",
-	                height: "20vh",
-	                background: "linear-gradient(45deg, #00b7c7, 0, #4d0ce8 100%)",
-                    padding: "30px 0 40px"
+                      color: "white",
+                      paddingTop: "40px",
+                     paddingBottom: "40px"
+                },
+                cover : {
+
                 }
 		    }
 	    });
 
+
+	    const info = {
+	        menu:  ["introduction", "portfolio", "contact"]
+        };
+
 	    const html = (
                 <Grid fluid={true}>
+
                     <Row style={styles.top_row}>
-                        <Menu/>
+                        <Menu info={info}/>
                     </Row>
+
+                    <Row style={styles.cover} id="cover">
+
+                    </Row>
+
                     <Row style={styles.full_row} id="introduction">
                         <Introduction/>
                     </Row>

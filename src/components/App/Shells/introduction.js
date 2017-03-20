@@ -2,44 +2,64 @@
 
 
 import React from 'react';
-
+import {Grid, Col, Row} from 'react-bootstrap';
+import reactCSS from 'reactcss'
 
 export default class Introduction extends React.Component{
 
     render(){
 
-        return (
-            <div className="container">
-                <div className="row text-center" id="introduction">
 
-                    <h1 className="heading">introduction</h1>
-                    <p> My name is Rixing Wu, I'm 21 years old and currently studying my third
-                        towards my bache degree in Computer Science at the Wentworth
-                        Institute of Technology in Boston Massachasch. What do I do? I code.
-                        I started my programming journey many years ago with a TI-82 calculator,
-                        and since that day I knew my true calling.
-                    </p>
+        const styles = reactCSS({
 
-                    <p>
-                        I have a strong theoretical background in Computer Science, so Java and C/C++
-                        are my weapons of choice for solving problems. Whether it's high level or low
-                        level I love getting my hands dirty and making things work, especially if it
-                        involves learning new concepts. One of my passions is Human Computer Interaction,
-                        which is what I'm specializing in as a track in my degree. I'm always tinkering
-                        with something, whether it's making Android applications, websites with HTML/CSS,
-                        or just experimenting with JavaScript.
-                    </p>
+            default: {
+                container:{
+                    backgroundColor: " #1b1b1b",
+                    lineHeight : "1.5em",
+                    fontFamily: 'Roboto, Helvetica Neue, Helvetica, Arial, sans-serif',
+                    padding: "40px",
+                    fontSize: "20px",
+                    height: "100vh",
+                 },
+                row : {
+                    paddingBottom: "20px"
+                }
+            }
 
-                    <div id="resume" >
-                        <a href="/Resume.pdf" className="btn btn-lg" title="View Resumé">
-                            <i className="glyphicon glyphicon-file"> </i>View Resumé
-                        </a>
-                    </div>
+        });
 
+        const html = (
 
-                </div>
-            </div>
-        )
+            <Grid style = {styles.container} fluid={true}>
+
+                   <Grid>
+                       <Row style={styles.row}>
+                           <h1 className="h1">
+                               Hello, I'm Rixing.
+                           </h1>
+                       </Row>
+
+                       <Row style={styles.row}>
+                           <strong>
+                               I am an enthusiastic, detail oriented software engineer passionate about mobile & web technologies. I'm  a third-year student at Wentworth Institute of Technology in Boston studying computer science.
+                           </strong>
+                       </Row>
+
+                       <Row style={styles.row}>
+                           <p>
+                               I have a strong theoretical background in computer science, including a thorough knowledge of data structure as well as algorithm design and analysis. I have experience developing and designing applications for the both web and Apple's ios platforms. Whether it's making native ios applications with swift or complex d3 visualization systems with HTML/CSS/JavaScript,  I strive to create software not only efficient but also maintainable.
+                           </p>
+                       </Row>
+
+                       <Row style={styles.row}>
+                           I enjoy learning new concepts. Whether it's getting my hands dirty with the latest machine learning technique or exploring open source frameworks in Github, I'm always tinkering with something, especially projects that require me to work outside of my comfort.
+                       </Row>
+                   </Grid>
+
+            </Grid>
+
+        );
+        return html;
     }
 
 }

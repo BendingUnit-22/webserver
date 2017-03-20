@@ -14,12 +14,19 @@ export default class Menu extends React.Component{
 
 	    const styles = reactCSS({
 		    default: {
-
+                navbar:{
+                  padding: "24px 0px",
+                  },
+                title: {
+                    fontFamily: 'Montserrat',
+                     letterSpacing: "0.2em",
+                    textTransform: "uppercase"
+                 }
 		    }
 	    });
 
 	    const navItems =
-		    ["introduction", "portfolio", "contact"].map(
+		    this.props.info.menu.map(
 		        (link)=> {
                     return <NavItem key={link} href={"#"+link}>
                             {link.toUpperCase()}
@@ -27,11 +34,8 @@ export default class Menu extends React.Component{
 		        });
 
         const html = (
-               <Navbar>
+               <Navbar style = {styles.navbar} >
                    <Navbar.Header>
-                       <Navbar.Brand>
-                           <a >Rixing Wu</a>
-                       </Navbar.Brand>
                        <Navbar.Toggle />
                    </Navbar.Header>
                    <Navbar.Collapse>
@@ -41,11 +45,13 @@ export default class Menu extends React.Component{
                    </Navbar.Collapse>
                </Navbar>
         );
+
+
         return html;
     }
 
 	scrollTo(event){
-        console.log(event)
+        console.log(event);
 		smoothScroll(event.target.id)
 	};
 

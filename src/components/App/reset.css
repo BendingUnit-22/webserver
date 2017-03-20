@@ -46,3 +46,37 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Whitney,Helvetica,Arial,sans-serif;
+    height: 100%;
+    color: #f2f2f2;
+    background-color:#242729;
+}
+
+.zmdi {
+    color: white
+}
+
+h1 {
+    font-family: "Chronicle Display Bold",Georgia,serif;
+}
+
+#cover{
+    width:100vw;
+    height:100vh;
+    background-image: url('/images/cover.jpg');
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+
+  }
