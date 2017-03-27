@@ -1,18 +1,16 @@
 
 import React, {Component} from 'react';
-import Introduction from './Shells/introduction';
+import Introduction from './Shells/Introduction';
 import Portfolio from './Shells/Portfolio';
 import Contact from './Shells/Contact';
 import Menu from './Shells/Menu';
+import Skills from './Shells/Skills'
+
 import {Grid, Row} from 'react-bootstrap';
 import reactCSS from 'reactcss'
 import "./reset.css"
 
-import coverimage from '../../../public/images/cover.jpg';
-
 class App extends Component{
-
-
     render(){
 	    const styles = reactCSS({
 		    'default': {
@@ -47,13 +45,15 @@ class App extends Component{
                         <Menu info={info}/>
                     </Row>
 
-                    <Row style={styles.cover} id="cover">
-
+                    <Row style={styles.cover} id="skills">
+                        <Skills/>
                     </Row>
 
                     <Row style={styles.full_row} id="introduction">
                         <Introduction/>
                     </Row>
+
+
                     <Row style={styles.full_row} id="portfolio">
                         <Portfolio/>
                     </Row>

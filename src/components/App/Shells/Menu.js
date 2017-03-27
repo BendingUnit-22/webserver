@@ -20,8 +20,11 @@ export default class Menu extends React.Component{
                 title: {
                     fontFamily: 'Montserrat',
                      letterSpacing: "0.2em",
-                    textTransform: "uppercase"
-                 }
+                    textTransform: "uppercase",
+                    color : "black"
+                 },
+
+
 		    }
 	    });
 
@@ -36,6 +39,11 @@ export default class Menu extends React.Component{
         const html = (
                <Navbar style = {styles.navbar} >
                    <Navbar.Header>
+
+                       <Navbar.Brand>
+                           <a style={styles.title} href="/">RIXING Wu</a>
+                       </Navbar.Brand>
+
                        <Navbar.Toggle />
                    </Navbar.Header>
                    <Navbar.Collapse>
