@@ -15,16 +15,27 @@ export default class Menu extends React.Component{
 	    const styles = reactCSS({
 		    default: {
                 navbar:{
-                  padding: "24px 0px",
+                  padding: "34px 0px",
+                    color: "blue"
                   },
                 title: {
                     fontFamily: 'Montserrat',
                      letterSpacing: "0.2em",
                     textTransform: "uppercase",
-                    color : "black"
-                 },
+                    fontSize: "1.5em",
+                    borderBottom: "thick solid gray",
+                    borderWidth : "1px",
+                },
 
-
+                dropdown: {
+                    color: "black"
+                },
+                detail : {
+                    fontSize: "0.9em",
+                    color: "black",
+                    fontFamily: 'Montserrat',
+                    letterSpacing: "0.2em",
+                   }
 		    }
 	    });
 
@@ -32,7 +43,7 @@ export default class Menu extends React.Component{
 		    this.props.info.menu.map(
 		        (link)=> {
                     return <NavItem key={link} href={"#"+link}>
-                            {link.toUpperCase()}
+                           <a style={styles.dropdown} >  {link.toUpperCase()}</a>
                     </NavItem>
 		        });
 
@@ -41,7 +52,11 @@ export default class Menu extends React.Component{
                    <Navbar.Header>
 
                        <Navbar.Brand>
-                           <a style={styles.title} href="/">RIXING Wu</a>
+                          <div>
+                              <a style={styles.title} href="/">Rixing Wu</a><br/>
+                              <i style={styles.detail} >Software Developer &#x2615;</i>
+                          </div>
+
                        </Navbar.Brand>
 
                        <Navbar.Toggle />

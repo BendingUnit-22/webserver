@@ -45,12 +45,12 @@ class App extends Component{
                         <Menu info={info}/>
                     </Row>
 
-                    <Row style={styles.cover} id="skills">
-                        <Skills/>
-                    </Row>
-
                     <Row style={styles.full_row} id="introduction">
                         <Introduction/>
+                    </Row>
+
+                    <Row style={styles.cover} id="skills">
+                        <Skills/>
                     </Row>
 
 
