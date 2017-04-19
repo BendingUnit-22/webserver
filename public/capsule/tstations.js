@@ -1514,7 +1514,7 @@
         root[11].stations[41].lines = 'Orange Line (all), Commuter Rail (Needham)';
         root[11].stations[41].longitude = -71.113411;
         root[12] = {};
-        root[12].color = '#808080';
+        root[12].color = 'silver';
         root[12].line = 'Silver Line';
         root[12].title = 'Silver Line (SL1, SL2)';
         root[12].stations = [];
@@ -1541,7 +1541,7 @@
         root[12].stations[3].lines = 'Silver Line (SL1, SL2)';
         root[12].stations[3].longitude = -71.0371685028;
         root[13] = {};
-        root[13].color = '#808080';
+        root[13].color = 'silver';
         root[13].line = 'Silver Line';
         root[13].title = 'Silver Line (SL1)';
         root[13].stations = [];
@@ -1593,7 +1593,7 @@
         root[13].stations[10].title = 'Terminal C';
         root[13].stations[11] = root[12].stations[3];
         root[14] = {};
-        root[14].color = '#808080';
+        root[14].color = 'silver';
         root[14].line = 'Silver Line';
         root[14].title = 'Silver Line (SL2)';
         root[14].stations = [];
@@ -1648,14 +1648,14 @@
         root[14].stations[7].lines = 'Silver Line (SL2)';
         root[14].stations[7].longitude = -71.034797;
         root[15] = {};
-        root[15].color = '#808080';
+        root[15].color = 'silver';
         root[15].line = 'Silver Line';
         root[15].title = 'Silver Line (SL4)';
         root[15].stations = [];
         root[15].stations[0] = root[0].stations[9];
         root[15].stations[1] = root[11].stations[24];
         root[16] = {};
-        root[16].color = '#808080';
+        root[16].color = 'silver';
         root[16].line = 'Silver Line';
         root[16].title = 'Silver Line (SL4, SL5)';
         root[16].stations = [];
@@ -1725,7 +1725,7 @@
         root[16].stations[10].lines = 'Silver Line (SL4, SL5)';
         root[16].stations[10].longitude = -71.0851156712;
         root[17] = {};
-        root[17].color = '#808080';
+        root[17].color = 'silver';
         root[17].line = 'Silver Line';
         root[17].title = 'Silver Line (SL5)';
         root[17].stations = [];
@@ -2735,5 +2735,66 @@
         root[39].stations[5].lines = 'Commuter Rail (Middleborough/Lakeville)';
         root[39].stations[5].longitude = -71.027518;
         root[39].stations[6] = root[3].stations[59];
+
+
+
+    function buildGraph(svg, projection) {
+
+	    var routes = root.slice(0, 18);
+
+	    for (var i in routes) {
+
+	        var line = routes[i];
+		    var color = line.color;
+
+		    var stations = svg.selectAll('.station')
+                            .data(line.stations)
+                            .enter()
+                            .append('circle')
+                            .attr('fill', function (d) {
+                                d._color = color;
+                                return color;
+                            })
+                            .attr('r', 4)
+                            .attr("transform", function (d) {
+                                return "translate(" + projection([d.longitude, d.latitude]) + ")";
+                            });
+
+
+		    stations
+			    .on('mouseover',function(d) {
+
+				    d3.select(this)
+					    .transition()
+					    .duration(200)
+					    .attr('r', 6)
+					    .attr('fill', 'yellow');
+				    d3.select('#title').text(d.title);
+				    d3.select('#rail').text(d.lines);
+				    d3.select('#address').text(d.address);
+
+			    })
+			    .on('mouseout',function () {
+				    d3.select(this)
+					    .transition()
+					    .duration(200)
+					    .attr('r', 4)
+					    .attr('fill', function (d) {
+                            return d._color;
+					    })
+
+
+
+				    d3.select('#title').text("");
+				    d3.select('#rail').text("");
+				    d3.select('#address').text("");
+			    })
+
+
+	    }
+
+
+    }
+
 
 
