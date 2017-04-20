@@ -16,7 +16,7 @@ export default class Introduction extends React.Component{
                 container:{
                     backgroundColor: " #334055",
                     lineHeight : "1.5em",
-                    fontSize: "20px",
+                    fontSize: "16px",
                     fontFamily: 'Roboto, Helvetica Neue, Helvetica, Arial, sans-serif',
                     padding: "40px",
                      height: "100vh",

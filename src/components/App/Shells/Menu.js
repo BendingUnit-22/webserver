@@ -15,26 +15,28 @@ export default class Menu extends React.Component{
 	    const styles = reactCSS({
 		    default: {
                 navbar:{
-                  padding: "34px 0px",
+                  padding: "25px 0px",
                     color: "blue"
                   },
                 title: {
                     fontFamily: 'Montserrat',
-                     letterSpacing: "0.2em",
+	                letterSpacing: "0.2em",
                     textTransform: "uppercase",
-                    fontSize: "1.5em",
+                    fontSize: "1.0em",
                     borderBottom: "thick solid gray",
                     borderWidth : "1px",
                 },
 
                 dropdown: {
-                    color: "black"
-                },
+                    color: "black",
+	                fontSize: "0.6em",
+    },
                 detail : {
-                    fontSize: "0.9em",
+                    fontSize: "0.6em",
                     color: "black",
                     fontFamily: 'Montserrat',
                     letterSpacing: "0.2em",
+
                    }
 		    }
 	    });
@@ -53,7 +55,7 @@ export default class Menu extends React.Component{
 
                        <Navbar.Brand>
                           <div>
-                              <a style={styles.title} href="/">Rixing Wu</a><br/>
+                              <span style={styles.title} href="/">Rixing Wu</span><br/>
                               <i style={styles.detail} >Software Developer &#x2615;</i>
                           </div>
 
@@ -68,7 +70,6 @@ export default class Menu extends React.Component{
                    </Navbar.Collapse>
                </Navbar>
         );
-
 
         return html;
     }
